@@ -23,8 +23,8 @@ This works with 35+ agents including Claude Code, Cursor, Codex, Gemini CLI, Git
 
 | Skill | Description |
 |-------|-------------|
-| [address-pr-comments](skills/address-pr-comments) | Address GitHub PR review comments — triage human + AI bot feedback, validate each comment, apply fixes, and report what was addressed vs rejected. |
-| [generate-commit-message](skills/generate-commit-message) | Generate professional git commit messages following [cbea.ms](https://cbea.ms/git-commit/) guidelines. |
+| [address-pr-comments](https://skills.sh/SepantaJoshani/agents-skills/address-pr-comments) | Address GitHub PR review comments — triage human + AI bot feedback, validate each comment, apply fixes, and report what was addressed vs rejected. |
+| [generate-commit-message](https://skills.sh/SepantaJoshani/agents-skills/generate-commit-message) | Generate professional git commit messages following [cbea.ms](https://cbea.ms/git-commit/) guidelines. |
 
 ## Usage
 
