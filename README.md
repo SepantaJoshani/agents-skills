@@ -14,6 +14,7 @@ Install a specific skill:
 
 ```bash
 npx skills add SepantaJoshani/agents-skills --skill address-pr-comments
+npx skills add SepantaJoshani/agents-skills --skill codex-open-worktree
 npx skills add SepantaJoshani/agents-skills --skill generate-commit-message
 ```
 
@@ -24,14 +25,21 @@ This works with 35+ agents including Claude Code, Cursor, Codex, Gemini CLI, Git
 | Skill | Description |
 |-------|-------------|
 | [address-pr-comments](https://skills.sh/SepantaJoshani/agents-skills/address-pr-comments) | Address GitHub PR review comments — triage human + AI bot feedback, validate each comment, apply fixes, and report what was addressed vs rejected. |
+| [codex-open-worktree](https://skills.sh/SepantaJoshani/agents-skills/codex-open-worktree) | Open any existing Git-registered worktree as a separate workspace in the macOS Codex app without changing Git state. |
 | [generate-commit-message](https://skills.sh/SepantaJoshani/agents-skills/generate-commit-message) | Generate professional git commit messages following [cbea.ms](https://cbea.ms/git-commit/) guidelines. |
 
 ## Usage
 
 After installing, invoke a skill directly from your agent:
 
-- **Claude Code**: type `/address-pr-comments` or `/generate-commit-message`, or describe the task and the agent auto-selects it
+- **Claude Code**: type `/address-pr-comments`, `/codex-open-worktree`, or `/generate-commit-message`, or describe the task and the agent auto-selects it
+- **Codex**: invoke `$codex-open-worktree` with a branch or worktree path, or invoke it without a selector to choose from the repository's registered worktrees
 - **Other agents**: the skill loads automatically based on your prompt
+
+`codex-open-worktree` works with worktrees created by Git, Claude, Codex,
+Supacode, or any other tool because it reads Git's registered worktree list. It
+opens the selected directory as a separate Codex workspace; the current task
+remains attached to its original workspace.
 
 ## Tips
 
@@ -43,6 +51,8 @@ After installing, invoke a skill directly from your agent:
 
 - [GitHub CLI (`gh`)](https://cli.github.com/) installed and authenticated (for `address-pr-comments`)
 - Python 3.8+ (for `address-pr-comments`)
+- macOS with the Codex desktop app installed (for `codex-open-worktree`); the app may be branded as ChatGPT but must use the `com.openai.codex` bundle identifier
+- Git and Python 3.9+ available on `PATH` (for `codex-open-worktree`)
 
 ## License
 
