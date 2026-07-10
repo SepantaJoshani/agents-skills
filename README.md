@@ -24,7 +24,7 @@ This works with 35+ agents including Claude Code, Cursor, Codex, Gemini CLI, Git
 
 | Skill | Description |
 |-------|-------------|
-| [address-pr-comments](https://skills.sh/SepantaJoshani/agents-skills/address-pr-comments) | Address GitHub PR review comments — triage human + AI bot feedback, validate each comment, apply fixes, and report what was addressed vs rejected. |
+| [address-pr-comments](https://skills.sh/SepantaJoshani/agents-skills/address-pr-comments) | Safely address GitHub PR feedback — verify the exact worktree, collect complete human + AI + automation comments, validate each claim, and create reviewable local commits. |
 | [codex-open-worktree](https://skills.sh/SepantaJoshani/agents-skills/codex-open-worktree) | Open any existing Git-registered worktree as a separate workspace in the macOS Codex app without changing Git state. |
 | [generate-commit-message](https://skills.sh/SepantaJoshani/agents-skills/generate-commit-message) | Generate professional git commit messages following [cbea.ms](https://cbea.ms/git-commit/) guidelines. |
 
