@@ -1,0 +1,4 @@
+interface:
+  display_name: "Open Worktree in Codex"
+  short_description: "Open a registered Git worktree in Codex"
+  default_prompt: "Use $codex-open-worktree to open an existing registered worktree in the macOS Codex app."
