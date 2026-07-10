@@ -1,0 +1,4 @@
+interface:
+  display_name: "Address PR Comments"
+  short_description: "Safely triage and fix GitHub PR feedback"
+  default_prompt: "Use $address-pr-comments to safely triage and address the review feedback on this pull request."
